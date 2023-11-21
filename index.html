@@ -1,18 +1,21 @@
-<!-- Scheme 测试 HTML 不想每次都写，直接放在工程里面 -->
 <!DOCTYPE html>
 <html lang="zh-CN">
-<html>
-<meta name="viewport" content="width=320,maximum-scale=1.3,user-scalable=no">
-<head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Test</title>
-</head>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kyo's Photography</title>
+    </head>
 
-<body>
-    <div>
-        <ul>
-            <li><a href="kwai://search?backRecommend=true&source=GrowthBaiduSemNewDevice&keyword=qq%E9%9F%B3%E4%B9%90%E4%B8%8B%E8%BD%BD%E6%AD%8C%E6%9B%B2&extParams=%7B%22sem%22%3A%7B%22showIds%22%3A%5B%2216746828091%22%2C%2213138091067%22%2C%2212386200858%22%2C%2259011163948%22%5D%2C%22clkIds%22%3A%5B%2216746828091%22%2C%2212386200858%22%5D%7D%7D&growth_channel_id=baidu_sem%23%23KUAISHOU%23%231%23%232145883">快手</a></li>
-        </ul>
-    </div>
-</body>
+    <body>
+        <div>
+            <p id="post_des">img des</p>
+            <img id="post_image" src="src/assets/demo.jpg" alt="Not Found Picture" align="top">
+        </div>
+        <div>
+            <p id="praise_text">骚话在这里</p>
+        </div>
+        <button onclick="change_function()">换一换</button>
+    </body>
+    <script src="configs.js"></script>
+    <script src="main.js"></script>
 </html>
