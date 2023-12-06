@@ -13,7 +13,7 @@ def is_target_dir(dir_path):
 
 
 def is_target_image(file_path: str):
-    return file_path.endswith('.jpg') or file_path.endswith('.png') or file_path.endswith('.jpeg')
+    return file_path.lower().endswith('.jpg') or file_path.lower().endswith('.png') or file_path.lower().endswith('.jpeg')
 
 
 def list_dir(target_path_name):
