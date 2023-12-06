@@ -6,7 +6,7 @@ function change_function(){
     console.log(index);
     document.getElementById("praise_text").innerHTML=configs.praise_texts[index];
     var length = images_config.get(now_post_image).length
-    var post_index = Math.round(Math.random() *  (length - 1))
+    var post_index = Math.round(Math.random() * (length - 1))
     console.log(post_index)
     console.log(images_config.get(now_post_image)[post_index])
     document.getElementById("post_image").src=images_config.get(now_post_image)[post_index]
