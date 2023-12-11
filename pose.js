@@ -1,19 +1,19 @@
-var now_post_image=get_query_param("id")
+var now_pose_image=get_query_param("id")
 
 document.getElementById("praise_text").innerHTML=configs.praise_texts[Math.round(Math.random() * configs.praise_texts.length - 1)];
-document.getElementById("post_image").src=images_config.get(now_post_image)[Math.round(Math.random() * images_config.get(now_post_image).length - 1)]
+document.getElementById("pose_image").src=images_config.get(now_pose_image)[Math.round(Math.random() * images_config.get(now_pose_image).length - 1)]
 
-console.log(now_post_image)
+console.log(now_pose_image)
 
 function change_function(){
     var index = Math.round(Math.random() * (configs.praise_texts.length - 1));
     console.log(index);
     document.getElementById("praise_text").innerHTML=configs.praise_texts[index];
-    var length = images_config.get(now_post_image).length
-    var post_index = Math.round(Math.random() * (length - 1))
-    console.log(post_index)
-    console.log(images_config.get(now_post_image)[post_index])
-    document.getElementById("post_image").src=images_config.get(now_post_image)[post_index]
+    var length = images_config.get(now_pose_image).length
+    var pose_index = Math.round(Math.random() * (length - 1))
+    console.log(pose_index)
+    console.log(images_config.get(now_pose_image)[pose_index])
+    document.getElementById("pose_image").src=images_config.get(now_pose_image)[pose_index]
 }
 
 function get_query_param(variable) {

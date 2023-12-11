@@ -14,7 +14,7 @@ for (var i = 0; i < images_combo_config.length; i++) {
     newButton.setAttribute("id", button_id);
     newButton.setAttribute("style", "width: 400px; height: 50px; background-color: #2768f0; border: 0px;color: white; font-weight: bold; display: block; margin:20px auto;")
     newButton.addEventListener("click", function(event) {
-        change_post(event.target.id)
+        change_pose(event.target.id)
     })
     // 将按钮添加到数组中
     buttonArray.push(newButton);
@@ -25,7 +25,7 @@ for (var j = 0; j < buttonArray.length; j++) {
   parent.appendChild(buttonArray[j]);
 }
 
-function change_post(id){
+function change_pose(id){
     console.log("click " + id)
-    window.location.href='post.html?id=' + id
+    window.location.href='pose.html?id=' + id
 }
