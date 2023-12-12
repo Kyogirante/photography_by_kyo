@@ -11,4 +11,4 @@
 git commit提交记录，同时同步远端
 
 # 第五步，打开网址
-打开https://kyogirante.github.io/photography_by_kyo/网址，浏览pose照
+打开 https://kyogirante.github.io/photography_by_kyo 网址，浏览pose照
